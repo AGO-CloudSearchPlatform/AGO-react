@@ -1,0 +1,24 @@
+{
+  "name": "@anoldstory/ago-react",
+  "version": "1.0.0",
+  "description": "AGO React Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGO-CloudSearchPlatform/AGO-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AGO-CloudSearchPlatform/AGO-react/issues"
+  },
+  "homepage": "https://github.com/AGO-CloudSearchPlatform/AGO-react#readme",
+  "private": false,
+  "devDependencies": {
+    "axios": "^1.2.0",
+    "react": "^18.2.0"
+  }
+}
