@@ -1,2 +1,3 @@
-require("./SearchBar");
-module.exports = SearchBar;
+import SearchBar from "./SearchBar";
+
+export { SearchBar };

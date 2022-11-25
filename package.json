@@ -2,9 +2,12 @@
   "name": "@anoldstory/ago-react",
   "version": "1.0.0",
   "description": "AGO React Component",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [ "dist", "README.md" ],
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,12 @@
   },
   "homepage": "https://github.com/AGO-CloudSearchPlatform/AGO-react#readme",
   "private": false,
-  "devDependencies": {
+  "peerDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "axios": "^1.2.0",
+    "cross-env": "^7.0.3",
     "react": "^18.2.0"
   }
 }
