@@ -1,11 +1,13 @@
 import React from 'react';
 
-export interface SearchBar {
-  apiKey: string;
+export interface SearchBarProps {
+  apiKey:string;
   targetIndexName: string;
-  targetField: string;
+  targetField:string;
 }
 
-declare module '@anoldstory/ago-react' {
-  export { SearchBar };
-}
+export declare function SearchBar ({
+  apiKey,
+  targetIndexName,
+  targetField
+} : SearchBarProps) : React.ReactElement | null;
