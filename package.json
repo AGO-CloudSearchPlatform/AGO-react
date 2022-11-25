@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "test": "exit 0",
+    "rimraf": "./node_modules/rimraf/bin.js",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel components --out-dir dist --copy-files"
   },
@@ -31,5 +32,8 @@
     "babel-plugin-macros": "^3.1.0",
     "cross-env": "^7.0.3",
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }
