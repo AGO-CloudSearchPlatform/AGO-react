@@ -1,6 +1,6 @@
 {
   "name": "@anoldstory/ago-react",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "AGO React Component",
   "main": "dist/index.js",
   "files": [
@@ -35,5 +35,8 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "react-icons": "^4.6.0"
   }
 }
